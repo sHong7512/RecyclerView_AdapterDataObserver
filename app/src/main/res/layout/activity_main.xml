@@ -18,11 +18,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.shong.recyclerview_adapterdataobserver.CustomRecyclerView
         android:id="@+id/contentRV"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="10dp"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="20dp"
+        android:requiresFadingEdge="vertical"
         app:layout_constraintBottom_toTopOf="@id/editText"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         tools:itemCount="3"

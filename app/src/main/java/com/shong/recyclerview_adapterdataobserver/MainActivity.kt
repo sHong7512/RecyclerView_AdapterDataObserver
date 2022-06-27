@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         val contentAdapter = ContentAdapter(mutableListOf())
         binding.contentRV.adapter = contentAdapter
-        val linearLayoutManager = LinearLayoutManager(this)
+//        val linearLayoutManager = LinearLayoutManager(this)
+        val linearLayoutManager = SpeedyLinearLayoutManager(this, 10)
         linearLayoutManager.stackFromEnd = true
         val observer: RecyclerView.AdapterDataObserver = object : RecyclerView.AdapterDataObserver() {
 
